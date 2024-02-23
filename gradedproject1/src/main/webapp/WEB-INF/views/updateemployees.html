@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3> Update new car </h3>
+
+	<form action="updated" method="post">
+
+		<label>Id</label>
+
+		<input type="number" request readonly name="id" th:value="${employees.id}"/>
+
+		<br><br>
+
+		<label>Employee Name</label>
+
+		<input type="text" required name="employeeName" th:value="${employees.employeeName}"/>
+
+		
+
+		<br><br>
+
+		<label>Employee Address</label>
+
+		<input type="text" required name="employeeAddress" th:value="${employees.employeeAddress}"/>
+
+		<br><br>
+
+		<label>Employee Phone</label>
+
+		<input type="number" required name="employeePhone" th:value="${employees.employeePhone}"/>
+
+		<br><br>
+
+		<label>Employee Salary</label>
+
+		<input type="number" required name="employeeSalary" th:value="${employees.employeeSalary}"/>
+
+		<br><br>
+
+		<button type="submit">Update</button>
+
+	</form>
+
+
+
+</body>
+</html>
